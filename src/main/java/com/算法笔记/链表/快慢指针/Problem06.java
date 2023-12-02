@@ -1,4 +1,6 @@
-package com.算法笔记.数组链表;
+package com.算法笔记.链表.快慢指针;
+
+import com.算法笔记.ListNode;
 
 /*
  *@title Problem06

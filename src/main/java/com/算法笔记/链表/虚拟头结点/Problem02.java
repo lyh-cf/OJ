@@ -1,6 +1,7 @@
-package com.算法笔记.数组链表;
+package com.算法笔记.链表.虚拟头结点;
 
-import java.util.Arrays;
+import com.算法笔记.ListNode;
+
 import java.util.Comparator;
 import java.util.PriorityQueue;
 

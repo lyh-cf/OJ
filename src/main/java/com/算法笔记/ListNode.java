@@ -1,4 +1,4 @@
-package com.算法笔记.数组链表;
+package com.算法笔记;
 
 /*
  *@title ListNode
@@ -8,17 +8,17 @@ package com.算法笔记.数组链表;
  *@create 2023/11/10 16:51
  */
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
-    ListNode() {
+    public ListNode() {
     }
 
-    ListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    public ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
     }
