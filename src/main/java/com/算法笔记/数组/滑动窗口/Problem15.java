@@ -21,26 +21,28 @@ public class Problem15 {
         int left=0,right = 0;
         int value = 0;
         while (right < s2.length()) {
-            //窗口扩大, 加入right对应元素, 更新当前result
+            //将移入窗口的字符
             char rightChar = s2.charAt(right);
+            //增大窗口
             right++;
+            //进行窗口内数据的一系列更新
             if (need.containsKey(rightChar)) {
                 window.put(rightChar, window.getOrDefault(rightChar, 0) + 1);
                 //注意 等于 作为条件，而非 >
                 if (window.get(rightChar).equals(need.get(rightChar))) value++;
             }
             //注意这里判断窗口是否收缩的条件，实际上是固定了窗口的大小
-            while (right-left>=s1.length()){
+            while (right-left==s1.length()){
                 if (value == need.size()) {
                     return true;
                 }
-                //窗口缩小, 移除left对应元素, left右移
+                //将移出窗口的字符
                 char leftChar = s2.charAt(left);
                 if (need.containsKey(leftChar)) {
                     if (need.get(leftChar).equals(window.get(leftChar))) value--;
-                    if (window.containsKey(leftChar) && window.get(leftChar) == 1) window.remove(leftChar);
-                    else if (window.containsKey(leftChar)) window.put(leftChar, window.get(leftChar) - 1);
+                    window.put(leftChar, window.get(leftChar) - 1);
                 }
+                //缩小窗口
                 left++;
             }
         }

@@ -36,7 +36,7 @@ public class SlidingWindowTemplate {
             }
         }
     }
-
     private boolean check() {
+        return true;
     }
 }
