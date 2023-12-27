@@ -52,7 +52,7 @@ public class MergeSort {
         split(arr, temp, mid + 1, right);
         //3.合：两个有序的结果，可以进行合并
         merge(arr, temp, left, mid, mid + 1, right);
-        System.arraycopy(temp,left,arr,left,right-left+1);
+        System.arraycopy(temp, left, arr, left, right - left + 1);
     }
 
     public static void main(String[] args) {
@@ -60,4 +60,5 @@ public class MergeSort {
         mergeSort(arr);
         System.out.println(Arrays.toString(arr));
     }
+    
 }
