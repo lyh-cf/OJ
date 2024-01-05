@@ -39,7 +39,6 @@ public class MergeSort {
             //原数组，原数组开始复制的起始索引，目标数组，目标数组开始复制的起始索引，长度
             System.arraycopy(arr, jStart, temp, k, jEnd - jStart + 1);
         }
-
     }
 
     private static void split(int[] arr, int[] temp, int left, int right) {
@@ -50,6 +49,7 @@ public class MergeSort {
         int mid = left + (right - left) / 2;
         split(arr, temp, left, mid);
         split(arr, temp, mid + 1, right);
+        /* 后序位置 */
         //3.合：两个有序的结果，可以进行合并
         merge(arr, temp, left, mid, mid + 1, right);
         System.arraycopy(temp, left, arr, left, right - left + 1);

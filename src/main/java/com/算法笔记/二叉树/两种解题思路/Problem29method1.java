@@ -1,4 +1,6 @@
-package com.算法笔记.二叉树;
+package com.算法笔记.二叉树.两种解题思路;
+
+import com.算法笔记.二叉树.TreeNode;
 
 /*
  *@title Problem29

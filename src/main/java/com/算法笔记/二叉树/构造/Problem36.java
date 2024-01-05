@@ -1,4 +1,6 @@
-package com.算法笔记.二叉树;
+package com.算法笔记.二叉树.构造;
+
+import com.算法笔记.二叉树.TreeNode;
 
 import java.util.HashMap;
 

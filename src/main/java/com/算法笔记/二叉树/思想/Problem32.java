@@ -1,4 +1,6 @@
-package com.算法笔记.二叉树;
+package com.算法笔记.二叉树.思想;
+
+import com.算法笔记.二叉树.Node;
 
 import java.util.LinkedList;
 import java.util.List;

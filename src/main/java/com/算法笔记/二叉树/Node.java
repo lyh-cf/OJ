@@ -7,7 +7,7 @@ package com.算法笔记.二叉树;
  *@version 1.0
  *@create 2023/12/28 9:46
  */
-class Node {
+public class Node {
     public int val;
     public Node left;
     public Node right;
