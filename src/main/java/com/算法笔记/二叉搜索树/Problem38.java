@@ -28,6 +28,7 @@ public class Problem38 {
             kthSmallest=root.val;
             return;
         }
+
         traverse(root.right,k);
     }
 }
